@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Write code to get 1st H1 element from a webpage using DOM</h3>
+    <h1>Hello!, First h1 here!</h1>
+    <h1>Hello!, Second h1 here!</h1>
+    <h1>Hello!, Third h1 here!</h1>
+    <button id="buttn">Click</button>
+
+    <script>
+        let firstH1=document.querySelector("h1");
+        document.getElementById("buttn").addEventListener("click", alertH1);       
+        
+        function alertH1(){
+            alert(firstH1.innerText);
+        }
+    </script>
+</body>
+</html>

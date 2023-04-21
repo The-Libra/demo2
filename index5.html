@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Create an HTML page having content as Hello world and a button named "Hide Text." When user will click on this button hide the "Hello World" text</h3>
+
+    <h1>Hello World</h1>
+    <button>Hide Text</button>
+
+    <script>
+        let h1=document.getElementsByTagName("h1");
+        let button=document.getElementsByTagName("button");
+
+        button[0].addEventListener("click", hideText);
+        function hideText()
+        {
+            h1[0].style.visibility="hidden";
+        }
+    </script>
+</body>
+</html>

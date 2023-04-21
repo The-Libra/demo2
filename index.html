@@ -1,0 +1,9 @@
+<h3>Create a button , on click of which new Heading tag h1 should be added with text as "MERN stack" on the screen above button</h3>
+
+<div id="text"></div>
+<button id="btn">CLICK!</button>
+
+<script>
+    let textArea=document.getElementById("text");
+    document.getElementById("btn").addEventListener("click", ()=>{ textArea.innerText="MERN STACK"});
+</script>
